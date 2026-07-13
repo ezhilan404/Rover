@@ -22,7 +22,7 @@ def generate_launch_description():
         Node(
             package="rviz2",
             executable="rviz2",
-            arguments=['-d', os.path.join(get_package_share_directory('rover_description'), 'rviz', 'view_robot1.rviz')]
+            arguments=['-d', os.path.join(get_package_share_directory('rover_description'), 'rviz', 'view_robot.rviz')]
         ),
 
         Node(

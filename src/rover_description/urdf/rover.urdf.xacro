@@ -5,6 +5,12 @@
         <disableFixedJointLumping>true</disableFixedJointLumping>
     </gazebo>
 
+    <gazebo>
+        <plugin filename="gz-sim-joint-state-publisher-system"
+            name="gz::sim::systems::JointStatePublisher">
+        </plugin>
+    </gazebo>
+
     <xacro:property name="wheel_radius" value="0.05"/>
     <xacro:property name="wheel_thickness" value="0.04"/>
     <xacro:property name="chassis_length" value="0.30"/>

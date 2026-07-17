@@ -23,7 +23,8 @@
   direction: GZ_TO_ROS
 
 - ros_topic_name: "/joint_states"
-  gz_topic_name: "<the exact name from gz topic -l>"
+  gz_topic_name: "/world/rescue_world/model/rover/joint_state"
   ros_type_name: "sensor_msgs/msg/JointState"
   gz_type_name: "gz.msgs.Model"
   direction: GZ_TO_ROS
+  

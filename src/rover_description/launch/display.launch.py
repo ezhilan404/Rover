@@ -15,19 +15,16 @@ def generate_launch_description():
             package='robot_state_publisher',
             executable='robot_state_publisher',
             parameters=[{
-                'robot_description': robot_desc
+                'robot_description': robot_desc, 'use_sim_time': True
             }]
         ),
 
         Node(
             package="rviz2",
             executable="rviz2",
-            arguments=['-d', os.path.join(get_package_share_directory('rover_description'), 'rviz', 'view_robot.rviz')]
-        ),
-
-        Node(
-            package='joint_state_publisher_gui',
-            executable='joint_state_publisher_gui',
+            arguments=['-d', os.path.join(get_package_share_directory('rover_description'), 'rviz', 'view_robot.rviz')],
+            parameters=[{'use_sim_time': True}]
         )
+
 
     ])

@@ -37,6 +37,7 @@ setup(
             'detection_node = rover_control.detection_node:main',
 	    'astar_planner = rover_control.astar_planner:main',
 	    'path_follower = rover_control.path_follower:main',
+	    'rl_navigator = rover_control.rl_navigator:main',
         ],
     },
 )

@@ -33,7 +33,8 @@ def generate_launch_description():
         Node(
             package='tf2_ros', executable='static_transform_publisher',
             name='base_to_laser', output='screen',
-            arguments=['--x', '0', '--y', '0', '--z', '0.20',
+            arguments=['--x', '-0.12', '--y', '0', '--z', '0.20',
+                       '--yaw', '1.5708',
                        '--frame-id', 'base_link', '--child-frame-id', 'laser_frame'],
         ),
 
